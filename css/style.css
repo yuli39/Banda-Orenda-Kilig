@@ -1,9 +1,10 @@
 * {
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
-    margin: 0;
+
 }
 
+/*----------HEADER-------------*/
 header {
     display: flex;
     justify-content: center;
@@ -11,6 +12,7 @@ header {
     background-color: black;
 }
 
+/*----------NAV-------------*/
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -21,9 +23,9 @@ header {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 50px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .topnav a:hover {
@@ -69,16 +71,27 @@ header {
     }
 }
 
+/*----------REPERTORIO Y CARD-------------*/
+
 .welcome {
+    background-color: aqua;
+    height: 400px;
+    display: flex;
+}
+
+.welcomeh1 {
+    padding-top: 40px;
     text-align: center;
     justify-content: center;
-    margin-top: 90px;
-    font-size: 50px;
+    font-size: 80px;
 }
 
 .title {
     text-align: center;
     justify-content: center;
+    font-size: 40px;
+    padding-top: 40px;
+    color: black;
 }
 
 .card-text {
@@ -90,26 +103,92 @@ header {
     float: right;
 }
 
-.text-nosotros {
-    color: white;
-    justify-content: center;
-    text-align: center;
+/*----------SOBRE NOSOTROS-------------*/
+.sobrenosotros {
+    background-color: violet;
+    display: flex;
 }
 
+.text-h3 {
+    padding-top: 40px;
+    color: black;
+    justify-content: center;
+    text-align: center;
 
-.legal {
+}
+
+.text-nosotros {
+    color: black;
+
     font-size: 20px;
-    text-decoration: none;
-    float: right;
-    list-style: none;
+}
 
+.row-integrantes {
+    justify-content: center;
+}
+
+.col-3 {
+    display: flex;
+}
+
+.integrsntes-img {
+    display: flex;
+    border-radius: 50%;
+    margin-top: 40px;
+
+}
+
+/*----------FOOTER-------------*/
+.legal {
+    display: flex;
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 10px;
     flex-wrap: wrap;
-    margin-right: 40px;
+
 }
 
 .legall {
     display: flex;
+    background-color: #1f1414;
+    display: flex;
+
+}
+
+.RedesSociales {
+    margin-top: 40px;
+    display: flex;
     justify-content: center;
     text-align: center;
-    background-color: gray;
+    color: white;
+}
+
+.enlaces-redes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .legal {
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .legall {
+        text-align: center;
+        justify-content: center;
+
+    }
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
 }
